@@ -6,6 +6,15 @@
   (function () {
     window.Tawk_API = window.Tawk_API || {};
     window.Tawk_LoadStart = new Date();
+    // Push the Tawk bubble up so it doesn't overlap our own WhatsApp
+    // floating button (fixed at bottom:22px, 58px tall -> occupies ~0-80px
+    // from the bottom edge). Must be set before the embed script downloads.
+    window.Tawk_API.customStyle = {
+      visibility: {
+        desktop: { position: "br", xOffset: 20, yOffset: 96 },
+        mobile: { position: "br", xOffset: 12, yOffset: 96 },
+      },
+    };
     var s1 = document.createElement("script");
     var s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
