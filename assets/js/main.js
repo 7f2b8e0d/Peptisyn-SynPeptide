@@ -1,4 +1,4 @@
-/* PeptiSyn — site interactions */
+﻿/* BangHui — site interactions */
 (function () {
   "use strict";
 
@@ -166,7 +166,7 @@
       var product = (data.get("product") || "").toString().trim();
       var message = (data.get("message") || "").toString().trim();
       var text =
-        "Hello PeptiSyn, I'd like to enquire.%0A%0A" +
+        "Hello BangHui, I'd like to enquire.%0A%0A" +
         "Name: " + encodeURIComponent(name) + "%0A" +
         "Email: " + encodeURIComponent(email) + "%0A" +
         "Product of interest: " + encodeURIComponent(product) + "%0A" +

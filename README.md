@@ -1,4 +1,4 @@
-# Peptisyn-SynPeptide
+﻿# Peptisyn-SynPeptide
 这是我给客户做的纯静态网站，是做外贸的，卖的是多肽产品的，要完全模仿https://sxnb-peptide.com/ 这个网站，图片根据上传的图片生成一些更高级的图片，但是网站要做的比它更高级简洁美观，这个网站要是可以直接部署到github的网站
 
 以下是网站的描述
@@ -16,7 +16,7 @@ The company adheres to the concept of "customer-centric, market-oriented, innova
 
 ---
 
-## Website (PeptiSyn) — Static Site
+## Website (BangHui) — Static Site
 
 A fully static, English-language marketing website for the peptide business. Built with plain HTML, CSS and vanilla JavaScript (no build step required).
 

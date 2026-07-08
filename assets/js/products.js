@@ -1,4 +1,4 @@
-/* PeptiSyn — product catalog (filename = product name) */
+﻿/* BangHui — product catalog (filename = product name) */
 window.PEPTISYN_PRODUCTS = [
   { name: "5-amino-1mq 5mg", file: "5-amino-1mq 5mg.jpg" },
   { name: "BPC 5mg and TB 5mg", file: "BPC 5mg and TB 5mg.jpg" },
