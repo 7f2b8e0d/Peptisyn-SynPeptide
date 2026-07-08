@@ -41,7 +41,7 @@ window.renderProductCard = function (product, index) {
     "<h3>" +
     product.name +
     "</h3>" +
-    "<p>Research-grade lyophilized peptide powder. Every batch tested by HPLC and mass spectrometry for identity and purity.</p>" +
+    "<p>Research-grade lyophilized peptide powder. Every batch tested by COA — full certificate of analysis included for verified quality and purity.</p>" +
     '<a href="contact.html" class="pcard__link">Request quote &rarr;</a>' +
     "</div>" +
     "</article>"
