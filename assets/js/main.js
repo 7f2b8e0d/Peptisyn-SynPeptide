@@ -90,6 +90,18 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  // Product grids (must run before reveal observer)
+  if (window.renderProductGrid) {
+    document.querySelectorAll("[data-product-grid]").forEach(function (el) {
+      window.renderProductGrid(el);
+    });
+  }
+  if (window.renderProductSelect) {
+    document.querySelectorAll("[data-product-select]").forEach(function (el) {
+      window.renderProductSelect(el);
+    });
+  }
+
   // Reveal on scroll
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {

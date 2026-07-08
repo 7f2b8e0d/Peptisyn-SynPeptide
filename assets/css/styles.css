@@ -354,9 +354,43 @@ p { margin: 0 0 1em; color: var(--slate); }
   transition: transform .3s var(--ease), box-shadow .3s var(--ease);
 }
 .pcard:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.pcard__img { aspect-ratio: 4/3; overflow: hidden; background: var(--bg-softer); }
-.pcard__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
-.pcard:hover .pcard__img img { transform: scale(1.06); }
+.pcard__img { aspect-ratio: 4/3; overflow: hidden; background: #fff; position: relative; }
+.pcard__img img { width: 100%; height: 100%; object-fit: contain; padding: 12px; transition: transform .5s var(--ease); }
+.pcard:hover .pcard__img img { transform: scale(1.04); }
+.pcard__label {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 28px 16px 12px;
+  background: linear-gradient(transparent, rgba(10, 18, 34, .82));
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: .92rem;
+  letter-spacing: .02em;
+  text-align: center;
+}
+.split__media .img-caption,
+.hero__visual .img-caption {
+  margin-top: 10px;
+  text-align: center;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: .95rem;
+  color: var(--navy-800);
+}
+.ncard__label {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 24px 14px 10px;
+  background: linear-gradient(transparent, rgba(10, 18, 34, .78));
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: .88rem;
+  text-align: center;
+}
+.ncard__img { position: relative; background: #fff; }
+.ncard__img img { object-fit: contain; padding: 10px; background: #fff; }
+.split__media img { background: #fff; object-fit: contain; padding: 10px; }
+.hero__visual img { object-fit: contain; background: #fff; padding: 14px; }
 .pcard__body { padding: 24px 26px 28px; }
 .pcard__tag { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; font-family: var(--font-head); }
 .pcard h3 { font-size: 1.22rem; margin: 6px 0 8px; }
