@@ -397,6 +397,38 @@ p { margin: 0 0 1em; color: var(--slate); }
 .pcard p { font-size: .93rem; margin-bottom: 16px; }
 .pcard__link { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-head); font-weight: 600; font-size: .9rem; color: var(--navy-900); transition: gap .25s, color .25s; }
 .pcard__link:hover { gap: 12px; color: var(--gold-dark); }
+.pcard--featured { border-color: rgba(201, 162, 75, .45); box-shadow: 0 8px 32px rgba(201, 162, 75, .12); }
+.pcard--featured:hover { box-shadow: 0 14px 40px rgba(201, 162, 75, .2); }
+.pcard__badge {
+  position: absolute; top: 14px; left: 14px; z-index: 2;
+  padding: 5px 12px; border-radius: 999px;
+  background: linear-gradient(135deg, #c9a24b, #a9823a);
+  color: #fff; font-family: var(--font-head); font-weight: 600;
+  font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+}
+
+.spotlight-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.spotlight {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 0;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden; text-decoration: none; color: inherit;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+  box-shadow: var(--shadow-sm);
+}
+.spotlight:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.spotlight__img { background: #fff; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.spotlight__img img { width: 100%; max-height: 280px; object-fit: contain; }
+.spotlight__copy { padding: 36px 32px; display: flex; flex-direction: column; justify-content: center; }
+.spotlight__tag { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; font-family: var(--font-head); }
+.spotlight h3 { font-size: 1.5rem; margin: 8px 0 12px; color: var(--navy-900); }
+.spotlight p { font-size: .95rem; margin-bottom: 18px; }
+.spotlight__cta { font-family: var(--font-head); font-weight: 600; font-size: .92rem; color: var(--navy-900); }
+.spotlight:hover .spotlight__cta { color: var(--gold-dark); }
+@media (max-width: 900px) {
+  .spotlight-grid { grid-template-columns: 1fr; }
+  .spotlight { grid-template-columns: 1fr; }
+  .spotlight__copy { padding: 24px 26px 28px; }
+}
 
 /* ==========================================================================
    Steps / process

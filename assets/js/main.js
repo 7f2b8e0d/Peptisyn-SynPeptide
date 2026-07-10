@@ -91,6 +91,11 @@
   }
 
   // Product grids (must run before reveal observer)
+  if (window.renderFeaturedSpotlight) {
+    document.querySelectorAll("[data-featured-spotlight]").forEach(function (el) {
+      window.renderFeaturedSpotlight(el);
+    });
+  }
   if (window.renderProductGrid) {
     document.querySelectorAll("[data-product-grid]").forEach(function (el) {
       window.renderProductGrid(el);
